@@ -1,0 +1,3960 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      <link rel="icon" href="../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.4.1, mkdocs-material-8.5.8">
+    
+    
+      
+        <title>Change Log - Security Technologies Lab Guide</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.20d9efc8.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.815d1a91.min.css">
+        
+      
+      
+
+    
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="none" data-md-color-accent="none">
+  
+    
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#change-log" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../.." title="Security Technologies Lab Guide" class="md-header__button md-logo" aria-label="Security Technologies Lab Guide" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Security Technologies Lab Guide
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Change Log
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="Security Technologies Lab Guide" class="md-nav__button md-logo" aria-label="Security Technologies Lab Guide" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    Security Technologies Lab Guide
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
+        Welcome to Security Techonologies Lab
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" type="checkbox" id="__nav_2" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_2">
+          Cryptography lab
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Cryptography lab" data-md-level="1">
+        <label class="md-nav__title" for="__nav_2">
+          <span class="md-nav__icon md-icon"></span>
+          Cryptography lab
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../cryptography-lab/01-using_gnu_pg/" class="md-nav__link">
+        Gnu Privacy Assistant
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../cryptography-lab/02-create_pki_cfssl/" class="md-nav__link">
+        CFSSL
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" checked>
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_3">
+          Endpoint lab
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Endpoint lab" data-md-level="1">
+        <label class="md-nav__title" for="__nav_3">
+          <span class="md-nav__icon md-icon"></span>
+          Endpoint lab
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_1" type="checkbox" id="__nav_3_1" checked>
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_3_1">
+          Wazuh docker
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Wazuh docker" data-md-level="2">
+        <label class="md-nav__title" for="__nav_3_1">
+          <span class="md-nav__icon md-icon"></span>
+          Wazuh docker
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../" class="md-nav__link">
+        Wazuh containers for Docker
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Change Log
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        Change Log
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#wazuh-docker-v439" class="md-nav__link">
+    Wazuh Docker v4.3.9
+  </a>
+  
+    <nav class="md-nav" aria-label="Wazuh Docker v4.3.9">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#added" class="md-nav__link">
+    Added
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#wazuh-docker-v438" class="md-nav__link">
+    Wazuh Docker v4.3.8
+  </a>
+  
+    <nav class="md-nav" aria-label="Wazuh Docker v4.3.8">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#added_1" class="md-nav__link">
+    Added
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#wazuh-docker-v437" class="md-nav__link">
+    Wazuh Docker v4.3.7
+  </a>
+  
+    <nav class="md-nav" aria-label="Wazuh Docker v4.3.7">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#added_2" class="md-nav__link">
+    Added
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#wazuh-docker-v436" class="md-nav__link">
+    Wazuh Docker v4.3.6
+  </a>
+  
+    <nav class="md-nav" aria-label="Wazuh Docker v4.3.6">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#added_3" class="md-nav__link">
+    Added
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#wazuh-docker-v435" class="md-nav__link">
+    Wazuh Docker v4.3.5
+  </a>
+  
+    <nav class="md-nav" aria-label="Wazuh Docker v4.3.5">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#added_4" class="md-nav__link">
+    Added
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#wazuh-docker-v434" class="md-nav__link">
+    Wazuh Docker v4.3.4
+  </a>
+  
+    <nav class="md-nav" aria-label="Wazuh Docker v4.3.4">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#added_5" class="md-nav__link">
+    Added
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#wazuh-docker-v433" class="md-nav__link">
+    Wazuh Docker v4.3.3
+  </a>
+  
+    <nav class="md-nav" aria-label="Wazuh Docker v4.3.3">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#added_6" class="md-nav__link">
+    Added
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#wazuh-docker-v432" class="md-nav__link">
+    Wazuh Docker v4.3.2
+  </a>
+  
+    <nav class="md-nav" aria-label="Wazuh Docker v4.3.2">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#added_7" class="md-nav__link">
+    Added
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#wazuh-docker-v431" class="md-nav__link">
+    Wazuh Docker v4.3.1
+  </a>
+  
+    <nav class="md-nav" aria-label="Wazuh Docker v4.3.1">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#added_8" class="md-nav__link">
+    Added
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#wazuh-docker-v430" class="md-nav__link">
+    Wazuh Docker v4.3.0
+  </a>
+  
+    <nav class="md-nav" aria-label="Wazuh Docker v4.3.0">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#added_9" class="md-nav__link">
+    Added
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#wazuh-docker-v427" class="md-nav__link">
+    Wazuh Docker v4.2.7
+  </a>
+  
+    <nav class="md-nav" aria-label="Wazuh Docker v4.2.7">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#added_10" class="md-nav__link">
+    Added
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#wazuh-docker-v426" class="md-nav__link">
+    Wazuh Docker v4.2.6
+  </a>
+  
+    <nav class="md-nav" aria-label="Wazuh Docker v4.2.6">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#added_11" class="md-nav__link">
+    Added
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#wazuh-docker-v425" class="md-nav__link">
+    Wazuh Docker v4.2.5
+  </a>
+  
+    <nav class="md-nav" aria-label="Wazuh Docker v4.2.5">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#added_12" class="md-nav__link">
+    Added
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#wazuh-docker-v424" class="md-nav__link">
+    Wazuh Docker v4.2.4
+  </a>
+  
+    <nav class="md-nav" aria-label="Wazuh Docker v4.2.4">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#added_13" class="md-nav__link">
+    Added
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#wazuh-docker-v423" class="md-nav__link">
+    Wazuh Docker v4.2.3
+  </a>
+  
+    <nav class="md-nav" aria-label="Wazuh Docker v4.2.3">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#added_14" class="md-nav__link">
+    Added
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#wazuh-docker-v422" class="md-nav__link">
+    Wazuh Docker v4.2.2
+  </a>
+  
+    <nav class="md-nav" aria-label="Wazuh Docker v4.2.2">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#added_15" class="md-nav__link">
+    Added
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#wazuh-docker-v421" class="md-nav__link">
+    Wazuh Docker v4.2.1
+  </a>
+  
+    <nav class="md-nav" aria-label="Wazuh Docker v4.2.1">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#added_16" class="md-nav__link">
+    Added
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#wazuh-docker-v420" class="md-nav__link">
+    Wazuh Docker v4.2.0
+  </a>
+  
+    <nav class="md-nav" aria-label="Wazuh Docker v4.2.0">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#added_17" class="md-nav__link">
+    Added
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#wazuh-docker-v415" class="md-nav__link">
+    Wazuh Docker v4.1.5
+  </a>
+  
+    <nav class="md-nav" aria-label="Wazuh Docker v4.1.5">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#added_18" class="md-nav__link">
+    Added
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#wazuh-docker-v414" class="md-nav__link">
+    Wazuh Docker v4.1.4
+  </a>
+  
+    <nav class="md-nav" aria-label="Wazuh Docker v4.1.4">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#added_19" class="md-nav__link">
+    Added
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#wazuh-docker-v413" class="md-nav__link">
+    Wazuh Docker v4.1.3
+  </a>
+  
+    <nav class="md-nav" aria-label="Wazuh Docker v4.1.3">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#added_20" class="md-nav__link">
+    Added
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#wazuh-docker-v412" class="md-nav__link">
+    Wazuh Docker v4.1.2
+  </a>
+  
+    <nav class="md-nav" aria-label="Wazuh Docker v4.1.2">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#added_21" class="md-nav__link">
+    Added
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#wazuh-docker-v411" class="md-nav__link">
+    Wazuh Docker v4.1.1
+  </a>
+  
+    <nav class="md-nav" aria-label="Wazuh Docker v4.1.1">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#added_22" class="md-nav__link">
+    Added
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#wazuh-docker-v410" class="md-nav__link">
+    Wazuh Docker v4.1.0
+  </a>
+  
+    <nav class="md-nav" aria-label="Wazuh Docker v4.1.0">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#added_23" class="md-nav__link">
+    Added
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#wazuh-docker-v404_1110" class="md-nav__link">
+    Wazuh Docker v4.0.4_1.11.0
+  </a>
+  
+    <nav class="md-nav" aria-label="Wazuh Docker v4.0.4_1.11.0">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#added_24" class="md-nav__link">
+    Added
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#wazuh-docker-v403_1110" class="md-nav__link">
+    Wazuh Docker v4.0.3_1.11.0
+  </a>
+  
+    <nav class="md-nav" aria-label="Wazuh Docker v4.0.3_1.11.0">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#added_25" class="md-nav__link">
+    Added
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#wazuh-docker-v402_1110" class="md-nav__link">
+    Wazuh Docker v4.0.2_1.11.0
+  </a>
+  
+    <nav class="md-nav" aria-label="Wazuh Docker v4.0.2_1.11.0">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#added_26" class="md-nav__link">
+    Added
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#wazuh-docker-v401_1110" class="md-nav__link">
+    Wazuh Docker v4.0.1_1.11.0
+  </a>
+  
+    <nav class="md-nav" aria-label="Wazuh Docker v4.0.1_1.11.0">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#added_27" class="md-nav__link">
+    Added
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#wazuh-docker-v400_1101" class="md-nav__link">
+    Wazuh Docker v4.0.0_1.10.1
+  </a>
+  
+    <nav class="md-nav" aria-label="Wazuh Docker v4.0.0_1.10.1">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#added_28" class="md-nav__link">
+    Added
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#changed" class="md-nav__link">
+    Changed
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#wazuh-docker-v3132_791" class="md-nav__link">
+    Wazuh Docker v3.13.2_7.9.1
+  </a>
+  
+    <nav class="md-nav" aria-label="Wazuh Docker v3.13.2_7.9.1">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#added_29" class="md-nav__link">
+    Added
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fixed" class="md-nav__link">
+    Fixed
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#wazuh-docker-v3131_780" class="md-nav__link">
+    Wazuh Docker v3.13.1_7.8.0
+  </a>
+  
+    <nav class="md-nav" aria-label="Wazuh Docker v3.13.1_7.8.0">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#added_30" class="md-nav__link">
+    Added
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#wazuh-docker-v3130_771" class="md-nav__link">
+    Wazuh Docker v3.13.0_7.7.1
+  </a>
+  
+    <nav class="md-nav" aria-label="Wazuh Docker v3.13.0_7.7.1">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#added_31" class="md-nav__link">
+    Added
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fixed_1" class="md-nav__link">
+    Fixed
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#wazuh-docker-v3123_762" class="md-nav__link">
+    Wazuh Docker v3.12.3_7.6.2
+  </a>
+  
+    <nav class="md-nav" aria-label="Wazuh Docker v3.12.3_7.6.2">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#added_32" class="md-nav__link">
+    Added
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#wazuh-docker-v3122_762" class="md-nav__link">
+    Wazuh Docker v3.12.2_7.6.2
+  </a>
+  
+    <nav class="md-nav" aria-label="Wazuh Docker v3.12.2_7.6.2">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#added_33" class="md-nav__link">
+    Added
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#wazuh-docker-v3121_762" class="md-nav__link">
+    Wazuh Docker v3.12.1_7.6.2
+  </a>
+  
+    <nav class="md-nav" aria-label="Wazuh Docker v3.12.1_7.6.2">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#added_34" class="md-nav__link">
+    Added
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fixed_2" class="md-nav__link">
+    Fixed
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#wazuh-docker-v3120_761" class="md-nav__link">
+    Wazuh Docker v3.12.0_7.6.1
+  </a>
+  
+    <nav class="md-nav" aria-label="Wazuh Docker v3.12.0_7.6.1">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#added_35" class="md-nav__link">
+    Added
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#wazuh-docker-v3114_761" class="md-nav__link">
+    Wazuh Docker v3.11.4_7.6.1
+  </a>
+  
+    <nav class="md-nav" aria-label="Wazuh Docker v3.11.4_7.6.1">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#added_36" class="md-nav__link">
+    Added
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fixed_3" class="md-nav__link">
+    Fixed
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#wazuh-docker-v3113_752" class="md-nav__link">
+    Wazuh Docker v3.11.3_7.5.2
+  </a>
+  
+    <nav class="md-nav" aria-label="Wazuh Docker v3.11.3_7.5.2">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#added_37" class="md-nav__link">
+    Added
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#wazuh-docker-v3112_751" class="md-nav__link">
+    Wazuh Docker v3.11.2_7.5.1
+  </a>
+  
+    <nav class="md-nav" aria-label="Wazuh Docker v3.11.2_7.5.1">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#added_38" class="md-nav__link">
+    Added
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fixed_4" class="md-nav__link">
+    Fixed
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#wazuh-docker-v3111_751" class="md-nav__link">
+    Wazuh Docker v3.11.1_7.5.1
+  </a>
+  
+    <nav class="md-nav" aria-label="Wazuh Docker v3.11.1_7.5.1">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#added_39" class="md-nav__link">
+    Added
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#wazuh-docker-v3110_751" class="md-nav__link">
+    Wazuh Docker v3.11.0_7.5.1
+  </a>
+  
+    <nav class="md-nav" aria-label="Wazuh Docker v3.11.0_7.5.1">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#added_40" class="md-nav__link">
+    Added
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#wazuh-docker-v3102_750" class="md-nav__link">
+    Wazuh Docker v3.10.2_7.5.0
+  </a>
+  
+    <nav class="md-nav" aria-label="Wazuh Docker v3.10.2_7.5.0">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#added_41" class="md-nav__link">
+    Added
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#wazuh-docker-v3102_732" class="md-nav__link">
+    Wazuh Docker v3.10.2_7.3.2
+  </a>
+  
+    <nav class="md-nav" aria-label="Wazuh Docker v3.10.2_7.3.2">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#added_42" class="md-nav__link">
+    Added
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#wazuh-docker-v3100_732" class="md-nav__link">
+    Wazuh Docker v3.10.0_7.3.2
+  </a>
+  
+    <nav class="md-nav" aria-label="Wazuh Docker v3.10.0_7.3.2">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#added_43" class="md-nav__link">
+    Added
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#wazuh-docker-v395_721" class="md-nav__link">
+    Wazuh Docker v3.9.5_7.2.1
+  </a>
+  
+    <nav class="md-nav" aria-label="Wazuh Docker v3.9.5_7.2.1">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#added_44" class="md-nav__link">
+    Added
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#wazuh-docker-v394_720" class="md-nav__link">
+    Wazuh Docker v3.9.4_7.2.0
+  </a>
+  
+    <nav class="md-nav" aria-label="Wazuh Docker v3.9.4_7.2.0">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#added_45" class="md-nav__link">
+    Added
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#wazuh-docker-v393_720" class="md-nav__link">
+    Wazuh Docker v3.9.3_7.2.0
+  </a>
+  
+    <nav class="md-nav" aria-label="Wazuh Docker v3.9.3_7.2.0">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#fixed_5" class="md-nav__link">
+    Fixed
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#wazuh-docker-v392_711" class="md-nav__link">
+    Wazuh Docker v3.9.2_7.1.1
+  </a>
+  
+    <nav class="md-nav" aria-label="Wazuh Docker v3.9.2_7.1.1">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#added_46" class="md-nav__link">
+    Added
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#wazuh-docker-v392_680" class="md-nav__link">
+    Wazuh Docker v3.9.2_6.8.0
+  </a>
+  
+    <nav class="md-nav" aria-label="Wazuh Docker v3.9.2_6.8.0">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#added_47" class="md-nav__link">
+    Added
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#wazuh-docker-v391_710" class="md-nav__link">
+    Wazuh Docker v3.9.1_7.1.0
+  </a>
+  
+    <nav class="md-nav" aria-label="Wazuh Docker v3.9.1_7.1.0">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#added_48" class="md-nav__link">
+    Added
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#wazuh-docker-v391_680" class="md-nav__link">
+    Wazuh Docker v3.9.1_6.8.0
+  </a>
+  
+    <nav class="md-nav" aria-label="Wazuh Docker v3.9.1_6.8.0">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#added_49" class="md-nav__link">
+    Added
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fixed_6" class="md-nav__link">
+    Fixed
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#wazuh-docker-v390_672" class="md-nav__link">
+    Wazuh Docker v3.9.0_6.7.2
+  </a>
+  
+    <nav class="md-nav" aria-label="Wazuh Docker v3.9.0_6.7.2">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#changed_1" class="md-nav__link">
+    Changed
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#wazuh-docker-v390_671" class="md-nav__link">
+    Wazuh Docker v3.9.0_6.7.1
+  </a>
+  
+    <nav class="md-nav" aria-label="Wazuh Docker v3.9.0_6.7.1">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#added_50" class="md-nav__link">
+    Added
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#changed_2" class="md-nav__link">
+    Changed
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#removed" class="md-nav__link">
+    Removed
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#wazuh-docker-v382_670" class="md-nav__link">
+    Wazuh Docker v3.8.2_6.7.0
+  </a>
+  
+    <nav class="md-nav" aria-label="Wazuh Docker v3.8.2_6.7.0">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#changed_3" class="md-nav__link">
+    Changed
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#wazuh-docker-v382_662" class="md-nav__link">
+    Wazuh Docker v3.8.2_6.6.2
+  </a>
+  
+    <nav class="md-nav" aria-label="Wazuh Docker v3.8.2_6.6.2">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#changed_4" class="md-nav__link">
+    Changed
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#wazuh-docker-v382_661" class="md-nav__link">
+    Wazuh Docker v3.8.2_6.6.1
+  </a>
+  
+    <nav class="md-nav" aria-label="Wazuh Docker v3.8.2_6.6.1">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#changed_5" class="md-nav__link">
+    Changed
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#wazuh-docker-v382_654" class="md-nav__link">
+    Wazuh Docker v3.8.2_6.5.4
+  </a>
+  
+    <nav class="md-nav" aria-label="Wazuh Docker v3.8.2_6.5.4">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#added_51" class="md-nav__link">
+    Added
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#changed_6" class="md-nav__link">
+    Changed
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#removed_1" class="md-nav__link">
+    Removed
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#wazuh-docker-v381_654" class="md-nav__link">
+    Wazuh Docker v3.8.1_6.5.4
+  </a>
+  
+    <nav class="md-nav" aria-label="Wazuh Docker v3.8.1_6.5.4">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#changed_7" class="md-nav__link">
+    Changed
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#wazuh-docker-v380_654" class="md-nav__link">
+    Wazuh Docker v3.8.0_6.5.4
+  </a>
+  
+    <nav class="md-nav" aria-label="Wazuh Docker v3.8.0_6.5.4">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#changed_8" class="md-nav__link">
+    Changed
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#removed_2" class="md-nav__link">
+    Removed
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#wazuh-docker-v372_654" class="md-nav__link">
+    Wazuh Docker v3.7.2_6.5.4
+  </a>
+  
+    <nav class="md-nav" aria-label="Wazuh Docker v3.7.2_6.5.4">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#added_52" class="md-nav__link">
+    Added
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#changed_9" class="md-nav__link">
+    Changed
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fixed_7" class="md-nav__link">
+    Fixed
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#wazuh-docker-v372_653" class="md-nav__link">
+    Wazuh Docker v3.7.2_6.5.3
+  </a>
+  
+    <nav class="md-nav" aria-label="Wazuh Docker v3.7.2_6.5.3">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#changed_10" class="md-nav__link">
+    Changed
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fixed_8" class="md-nav__link">
+    Fixed
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#wazuh-docker-v370_650" class="md-nav__link">
+    Wazuh Docker v3.7.0_6.5.0
+  </a>
+  
+    <nav class="md-nav" aria-label="Wazuh Docker v3.7.0_6.5.0">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#changed_11" class="md-nav__link">
+    Changed
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#wazuh-docker-v370_643" class="md-nav__link">
+    Wazuh Docker v3.7.0_6.4.3
+  </a>
+  
+    <nav class="md-nav" aria-label="Wazuh Docker v3.7.0_6.4.3">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#added_53" class="md-nav__link">
+    Added
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#changed_12" class="md-nav__link">
+    Changed
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fixed_9" class="md-nav__link">
+    Fixed
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#wazuh-docker-v361_643" class="md-nav__link">
+    Wazuh Docker v3.6.1_6.4.3
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_1_3" type="checkbox" id="__nav_3_1_3" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_3_1_3">
+          Build docker images
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Build docker images" data-md-level="3">
+        <label class="md-nav__title" for="__nav_3_1_3">
+          <span class="md-nav__icon md-icon"></span>
+          Build docker images
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../build-docker-images/" class="md-nav__link">
+        Wazuh Docker Image Builder
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_1_4" type="checkbox" id="__nav_3_1_4" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_3_1_4">
+          Indexer certs creator
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Indexer certs creator" data-md-level="3">
+        <label class="md-nav__title" for="__nav_3_1_4">
+          <span class="md-nav__icon md-icon"></span>
+          Indexer certs creator
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../indexer-certs-creator/" class="md-nav__link">
+        Certificate creation image build
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_1_5" type="checkbox" id="__nav_3_1_5" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_3_1_5">
+          Multi node
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Multi node" data-md-level="3">
+        <label class="md-nav__title" for="__nav_3_1_5">
+          <span class="md-nav__icon md-icon"></span>
+          Multi node
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../multi-node/" class="md-nav__link">
+        Deploy Wazuh Docker in multi node configuration
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../multi-node/Migration-to-Wazuh-4.3/" class="md-nav__link">
+        Opendistro data migration to Wazuh indexer on docker.
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_1_6" type="checkbox" id="__nav_3_1_6" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_3_1_6">
+          Single node
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Single node" data-md-level="3">
+        <label class="md-nav__title" for="__nav_3_1_6">
+          <span class="md-nav__icon md-icon"></span>
+          Single node
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../single-node/" class="md-nav__link">
+        Deploy Wazuh Docker in single node configuration
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" type="checkbox" id="__nav_4" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_4">
+          Network lab
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Network lab" data-md-level="1">
+        <label class="md-nav__title" for="__nav_4">
+          <span class="md-nav__icon md-icon"></span>
+          Network lab
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../network-lab/01_install-suricata/" class="md-nav__link">
+        01 install suricata
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#wazuh-docker-v439" class="md-nav__link">
+    Wazuh Docker v4.3.9
+  </a>
+  
+    <nav class="md-nav" aria-label="Wazuh Docker v4.3.9">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#added" class="md-nav__link">
+    Added
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#wazuh-docker-v438" class="md-nav__link">
+    Wazuh Docker v4.3.8
+  </a>
+  
+    <nav class="md-nav" aria-label="Wazuh Docker v4.3.8">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#added_1" class="md-nav__link">
+    Added
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#wazuh-docker-v437" class="md-nav__link">
+    Wazuh Docker v4.3.7
+  </a>
+  
+    <nav class="md-nav" aria-label="Wazuh Docker v4.3.7">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#added_2" class="md-nav__link">
+    Added
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#wazuh-docker-v436" class="md-nav__link">
+    Wazuh Docker v4.3.6
+  </a>
+  
+    <nav class="md-nav" aria-label="Wazuh Docker v4.3.6">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#added_3" class="md-nav__link">
+    Added
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#wazuh-docker-v435" class="md-nav__link">
+    Wazuh Docker v4.3.5
+  </a>
+  
+    <nav class="md-nav" aria-label="Wazuh Docker v4.3.5">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#added_4" class="md-nav__link">
+    Added
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#wazuh-docker-v434" class="md-nav__link">
+    Wazuh Docker v4.3.4
+  </a>
+  
+    <nav class="md-nav" aria-label="Wazuh Docker v4.3.4">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#added_5" class="md-nav__link">
+    Added
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#wazuh-docker-v433" class="md-nav__link">
+    Wazuh Docker v4.3.3
+  </a>
+  
+    <nav class="md-nav" aria-label="Wazuh Docker v4.3.3">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#added_6" class="md-nav__link">
+    Added
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#wazuh-docker-v432" class="md-nav__link">
+    Wazuh Docker v4.3.2
+  </a>
+  
+    <nav class="md-nav" aria-label="Wazuh Docker v4.3.2">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#added_7" class="md-nav__link">
+    Added
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#wazuh-docker-v431" class="md-nav__link">
+    Wazuh Docker v4.3.1
+  </a>
+  
+    <nav class="md-nav" aria-label="Wazuh Docker v4.3.1">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#added_8" class="md-nav__link">
+    Added
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#wazuh-docker-v430" class="md-nav__link">
+    Wazuh Docker v4.3.0
+  </a>
+  
+    <nav class="md-nav" aria-label="Wazuh Docker v4.3.0">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#added_9" class="md-nav__link">
+    Added
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#wazuh-docker-v427" class="md-nav__link">
+    Wazuh Docker v4.2.7
+  </a>
+  
+    <nav class="md-nav" aria-label="Wazuh Docker v4.2.7">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#added_10" class="md-nav__link">
+    Added
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#wazuh-docker-v426" class="md-nav__link">
+    Wazuh Docker v4.2.6
+  </a>
+  
+    <nav class="md-nav" aria-label="Wazuh Docker v4.2.6">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#added_11" class="md-nav__link">
+    Added
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#wazuh-docker-v425" class="md-nav__link">
+    Wazuh Docker v4.2.5
+  </a>
+  
+    <nav class="md-nav" aria-label="Wazuh Docker v4.2.5">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#added_12" class="md-nav__link">
+    Added
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#wazuh-docker-v424" class="md-nav__link">
+    Wazuh Docker v4.2.4
+  </a>
+  
+    <nav class="md-nav" aria-label="Wazuh Docker v4.2.4">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#added_13" class="md-nav__link">
+    Added
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#wazuh-docker-v423" class="md-nav__link">
+    Wazuh Docker v4.2.3
+  </a>
+  
+    <nav class="md-nav" aria-label="Wazuh Docker v4.2.3">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#added_14" class="md-nav__link">
+    Added
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#wazuh-docker-v422" class="md-nav__link">
+    Wazuh Docker v4.2.2
+  </a>
+  
+    <nav class="md-nav" aria-label="Wazuh Docker v4.2.2">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#added_15" class="md-nav__link">
+    Added
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#wazuh-docker-v421" class="md-nav__link">
+    Wazuh Docker v4.2.1
+  </a>
+  
+    <nav class="md-nav" aria-label="Wazuh Docker v4.2.1">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#added_16" class="md-nav__link">
+    Added
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#wazuh-docker-v420" class="md-nav__link">
+    Wazuh Docker v4.2.0
+  </a>
+  
+    <nav class="md-nav" aria-label="Wazuh Docker v4.2.0">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#added_17" class="md-nav__link">
+    Added
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#wazuh-docker-v415" class="md-nav__link">
+    Wazuh Docker v4.1.5
+  </a>
+  
+    <nav class="md-nav" aria-label="Wazuh Docker v4.1.5">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#added_18" class="md-nav__link">
+    Added
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#wazuh-docker-v414" class="md-nav__link">
+    Wazuh Docker v4.1.4
+  </a>
+  
+    <nav class="md-nav" aria-label="Wazuh Docker v4.1.4">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#added_19" class="md-nav__link">
+    Added
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#wazuh-docker-v413" class="md-nav__link">
+    Wazuh Docker v4.1.3
+  </a>
+  
+    <nav class="md-nav" aria-label="Wazuh Docker v4.1.3">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#added_20" class="md-nav__link">
+    Added
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#wazuh-docker-v412" class="md-nav__link">
+    Wazuh Docker v4.1.2
+  </a>
+  
+    <nav class="md-nav" aria-label="Wazuh Docker v4.1.2">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#added_21" class="md-nav__link">
+    Added
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#wazuh-docker-v411" class="md-nav__link">
+    Wazuh Docker v4.1.1
+  </a>
+  
+    <nav class="md-nav" aria-label="Wazuh Docker v4.1.1">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#added_22" class="md-nav__link">
+    Added
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#wazuh-docker-v410" class="md-nav__link">
+    Wazuh Docker v4.1.0
+  </a>
+  
+    <nav class="md-nav" aria-label="Wazuh Docker v4.1.0">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#added_23" class="md-nav__link">
+    Added
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#wazuh-docker-v404_1110" class="md-nav__link">
+    Wazuh Docker v4.0.4_1.11.0
+  </a>
+  
+    <nav class="md-nav" aria-label="Wazuh Docker v4.0.4_1.11.0">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#added_24" class="md-nav__link">
+    Added
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#wazuh-docker-v403_1110" class="md-nav__link">
+    Wazuh Docker v4.0.3_1.11.0
+  </a>
+  
+    <nav class="md-nav" aria-label="Wazuh Docker v4.0.3_1.11.0">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#added_25" class="md-nav__link">
+    Added
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#wazuh-docker-v402_1110" class="md-nav__link">
+    Wazuh Docker v4.0.2_1.11.0
+  </a>
+  
+    <nav class="md-nav" aria-label="Wazuh Docker v4.0.2_1.11.0">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#added_26" class="md-nav__link">
+    Added
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#wazuh-docker-v401_1110" class="md-nav__link">
+    Wazuh Docker v4.0.1_1.11.0
+  </a>
+  
+    <nav class="md-nav" aria-label="Wazuh Docker v4.0.1_1.11.0">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#added_27" class="md-nav__link">
+    Added
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#wazuh-docker-v400_1101" class="md-nav__link">
+    Wazuh Docker v4.0.0_1.10.1
+  </a>
+  
+    <nav class="md-nav" aria-label="Wazuh Docker v4.0.0_1.10.1">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#added_28" class="md-nav__link">
+    Added
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#changed" class="md-nav__link">
+    Changed
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#wazuh-docker-v3132_791" class="md-nav__link">
+    Wazuh Docker v3.13.2_7.9.1
+  </a>
+  
+    <nav class="md-nav" aria-label="Wazuh Docker v3.13.2_7.9.1">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#added_29" class="md-nav__link">
+    Added
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fixed" class="md-nav__link">
+    Fixed
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#wazuh-docker-v3131_780" class="md-nav__link">
+    Wazuh Docker v3.13.1_7.8.0
+  </a>
+  
+    <nav class="md-nav" aria-label="Wazuh Docker v3.13.1_7.8.0">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#added_30" class="md-nav__link">
+    Added
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#wazuh-docker-v3130_771" class="md-nav__link">
+    Wazuh Docker v3.13.0_7.7.1
+  </a>
+  
+    <nav class="md-nav" aria-label="Wazuh Docker v3.13.0_7.7.1">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#added_31" class="md-nav__link">
+    Added
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fixed_1" class="md-nav__link">
+    Fixed
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#wazuh-docker-v3123_762" class="md-nav__link">
+    Wazuh Docker v3.12.3_7.6.2
+  </a>
+  
+    <nav class="md-nav" aria-label="Wazuh Docker v3.12.3_7.6.2">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#added_32" class="md-nav__link">
+    Added
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#wazuh-docker-v3122_762" class="md-nav__link">
+    Wazuh Docker v3.12.2_7.6.2
+  </a>
+  
+    <nav class="md-nav" aria-label="Wazuh Docker v3.12.2_7.6.2">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#added_33" class="md-nav__link">
+    Added
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#wazuh-docker-v3121_762" class="md-nav__link">
+    Wazuh Docker v3.12.1_7.6.2
+  </a>
+  
+    <nav class="md-nav" aria-label="Wazuh Docker v3.12.1_7.6.2">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#added_34" class="md-nav__link">
+    Added
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fixed_2" class="md-nav__link">
+    Fixed
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#wazuh-docker-v3120_761" class="md-nav__link">
+    Wazuh Docker v3.12.0_7.6.1
+  </a>
+  
+    <nav class="md-nav" aria-label="Wazuh Docker v3.12.0_7.6.1">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#added_35" class="md-nav__link">
+    Added
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#wazuh-docker-v3114_761" class="md-nav__link">
+    Wazuh Docker v3.11.4_7.6.1
+  </a>
+  
+    <nav class="md-nav" aria-label="Wazuh Docker v3.11.4_7.6.1">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#added_36" class="md-nav__link">
+    Added
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fixed_3" class="md-nav__link">
+    Fixed
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#wazuh-docker-v3113_752" class="md-nav__link">
+    Wazuh Docker v3.11.3_7.5.2
+  </a>
+  
+    <nav class="md-nav" aria-label="Wazuh Docker v3.11.3_7.5.2">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#added_37" class="md-nav__link">
+    Added
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#wazuh-docker-v3112_751" class="md-nav__link">
+    Wazuh Docker v3.11.2_7.5.1
+  </a>
+  
+    <nav class="md-nav" aria-label="Wazuh Docker v3.11.2_7.5.1">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#added_38" class="md-nav__link">
+    Added
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fixed_4" class="md-nav__link">
+    Fixed
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#wazuh-docker-v3111_751" class="md-nav__link">
+    Wazuh Docker v3.11.1_7.5.1
+  </a>
+  
+    <nav class="md-nav" aria-label="Wazuh Docker v3.11.1_7.5.1">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#added_39" class="md-nav__link">
+    Added
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#wazuh-docker-v3110_751" class="md-nav__link">
+    Wazuh Docker v3.11.0_7.5.1
+  </a>
+  
+    <nav class="md-nav" aria-label="Wazuh Docker v3.11.0_7.5.1">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#added_40" class="md-nav__link">
+    Added
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#wazuh-docker-v3102_750" class="md-nav__link">
+    Wazuh Docker v3.10.2_7.5.0
+  </a>
+  
+    <nav class="md-nav" aria-label="Wazuh Docker v3.10.2_7.5.0">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#added_41" class="md-nav__link">
+    Added
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#wazuh-docker-v3102_732" class="md-nav__link">
+    Wazuh Docker v3.10.2_7.3.2
+  </a>
+  
+    <nav class="md-nav" aria-label="Wazuh Docker v3.10.2_7.3.2">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#added_42" class="md-nav__link">
+    Added
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#wazuh-docker-v3100_732" class="md-nav__link">
+    Wazuh Docker v3.10.0_7.3.2
+  </a>
+  
+    <nav class="md-nav" aria-label="Wazuh Docker v3.10.0_7.3.2">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#added_43" class="md-nav__link">
+    Added
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#wazuh-docker-v395_721" class="md-nav__link">
+    Wazuh Docker v3.9.5_7.2.1
+  </a>
+  
+    <nav class="md-nav" aria-label="Wazuh Docker v3.9.5_7.2.1">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#added_44" class="md-nav__link">
+    Added
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#wazuh-docker-v394_720" class="md-nav__link">
+    Wazuh Docker v3.9.4_7.2.0
+  </a>
+  
+    <nav class="md-nav" aria-label="Wazuh Docker v3.9.4_7.2.0">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#added_45" class="md-nav__link">
+    Added
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#wazuh-docker-v393_720" class="md-nav__link">
+    Wazuh Docker v3.9.3_7.2.0
+  </a>
+  
+    <nav class="md-nav" aria-label="Wazuh Docker v3.9.3_7.2.0">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#fixed_5" class="md-nav__link">
+    Fixed
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#wazuh-docker-v392_711" class="md-nav__link">
+    Wazuh Docker v3.9.2_7.1.1
+  </a>
+  
+    <nav class="md-nav" aria-label="Wazuh Docker v3.9.2_7.1.1">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#added_46" class="md-nav__link">
+    Added
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#wazuh-docker-v392_680" class="md-nav__link">
+    Wazuh Docker v3.9.2_6.8.0
+  </a>
+  
+    <nav class="md-nav" aria-label="Wazuh Docker v3.9.2_6.8.0">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#added_47" class="md-nav__link">
+    Added
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#wazuh-docker-v391_710" class="md-nav__link">
+    Wazuh Docker v3.9.1_7.1.0
+  </a>
+  
+    <nav class="md-nav" aria-label="Wazuh Docker v3.9.1_7.1.0">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#added_48" class="md-nav__link">
+    Added
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#wazuh-docker-v391_680" class="md-nav__link">
+    Wazuh Docker v3.9.1_6.8.0
+  </a>
+  
+    <nav class="md-nav" aria-label="Wazuh Docker v3.9.1_6.8.0">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#added_49" class="md-nav__link">
+    Added
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fixed_6" class="md-nav__link">
+    Fixed
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#wazuh-docker-v390_672" class="md-nav__link">
+    Wazuh Docker v3.9.0_6.7.2
+  </a>
+  
+    <nav class="md-nav" aria-label="Wazuh Docker v3.9.0_6.7.2">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#changed_1" class="md-nav__link">
+    Changed
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#wazuh-docker-v390_671" class="md-nav__link">
+    Wazuh Docker v3.9.0_6.7.1
+  </a>
+  
+    <nav class="md-nav" aria-label="Wazuh Docker v3.9.0_6.7.1">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#added_50" class="md-nav__link">
+    Added
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#changed_2" class="md-nav__link">
+    Changed
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#removed" class="md-nav__link">
+    Removed
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#wazuh-docker-v382_670" class="md-nav__link">
+    Wazuh Docker v3.8.2_6.7.0
+  </a>
+  
+    <nav class="md-nav" aria-label="Wazuh Docker v3.8.2_6.7.0">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#changed_3" class="md-nav__link">
+    Changed
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#wazuh-docker-v382_662" class="md-nav__link">
+    Wazuh Docker v3.8.2_6.6.2
+  </a>
+  
+    <nav class="md-nav" aria-label="Wazuh Docker v3.8.2_6.6.2">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#changed_4" class="md-nav__link">
+    Changed
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#wazuh-docker-v382_661" class="md-nav__link">
+    Wazuh Docker v3.8.2_6.6.1
+  </a>
+  
+    <nav class="md-nav" aria-label="Wazuh Docker v3.8.2_6.6.1">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#changed_5" class="md-nav__link">
+    Changed
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#wazuh-docker-v382_654" class="md-nav__link">
+    Wazuh Docker v3.8.2_6.5.4
+  </a>
+  
+    <nav class="md-nav" aria-label="Wazuh Docker v3.8.2_6.5.4">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#added_51" class="md-nav__link">
+    Added
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#changed_6" class="md-nav__link">
+    Changed
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#removed_1" class="md-nav__link">
+    Removed
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#wazuh-docker-v381_654" class="md-nav__link">
+    Wazuh Docker v3.8.1_6.5.4
+  </a>
+  
+    <nav class="md-nav" aria-label="Wazuh Docker v3.8.1_6.5.4">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#changed_7" class="md-nav__link">
+    Changed
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#wazuh-docker-v380_654" class="md-nav__link">
+    Wazuh Docker v3.8.0_6.5.4
+  </a>
+  
+    <nav class="md-nav" aria-label="Wazuh Docker v3.8.0_6.5.4">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#changed_8" class="md-nav__link">
+    Changed
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#removed_2" class="md-nav__link">
+    Removed
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#wazuh-docker-v372_654" class="md-nav__link">
+    Wazuh Docker v3.7.2_6.5.4
+  </a>
+  
+    <nav class="md-nav" aria-label="Wazuh Docker v3.7.2_6.5.4">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#added_52" class="md-nav__link">
+    Added
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#changed_9" class="md-nav__link">
+    Changed
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fixed_7" class="md-nav__link">
+    Fixed
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#wazuh-docker-v372_653" class="md-nav__link">
+    Wazuh Docker v3.7.2_6.5.3
+  </a>
+  
+    <nav class="md-nav" aria-label="Wazuh Docker v3.7.2_6.5.3">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#changed_10" class="md-nav__link">
+    Changed
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fixed_8" class="md-nav__link">
+    Fixed
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#wazuh-docker-v370_650" class="md-nav__link">
+    Wazuh Docker v3.7.0_6.5.0
+  </a>
+  
+    <nav class="md-nav" aria-label="Wazuh Docker v3.7.0_6.5.0">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#changed_11" class="md-nav__link">
+    Changed
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#wazuh-docker-v370_643" class="md-nav__link">
+    Wazuh Docker v3.7.0_6.4.3
+  </a>
+  
+    <nav class="md-nav" aria-label="Wazuh Docker v3.7.0_6.4.3">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#added_53" class="md-nav__link">
+    Added
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#changed_12" class="md-nav__link">
+    Changed
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fixed_9" class="md-nav__link">
+    Fixed
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#wazuh-docker-v361_643" class="md-nav__link">
+    Wazuh Docker v3.6.1_6.4.3
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+<h1 id="change-log">Change Log</h1>
+<p>All notable changes to this project will be documented in this file.</p>
+<h2 id="wazuh-docker-v439">Wazuh Docker v4.3.9</h2>
+<h3 id="added">Added</h3>
+<ul>
+<li>Update Wazuh to version <a href="https://github.com/wazuh/wazuh/blob/v4.3.9/CHANGELOG.md#v439">4.3.9</a></li>
+</ul>
+<h2 id="wazuh-docker-v438">Wazuh Docker v4.3.8</h2>
+<h3 id="added_1">Added</h3>
+<ul>
+<li>Update Wazuh to version <a href="https://github.com/wazuh/wazuh/blob/v4.3.8/CHANGELOG.md#v438">4.3.8</a></li>
+</ul>
+<h2 id="wazuh-docker-v437">Wazuh Docker v4.3.7</h2>
+<h3 id="added_2">Added</h3>
+<ul>
+<li>Update Wazuh to version <a href="https://github.com/wazuh/wazuh/blob/v4.3.7/CHANGELOG.md#v437">4.3.7</a></li>
+</ul>
+<h2 id="wazuh-docker-v436">Wazuh Docker v4.3.6</h2>
+<h3 id="added_3">Added</h3>
+<ul>
+<li>Update Wazuh to version <a href="https://github.com/wazuh/wazuh/blob/v4.3.6/CHANGELOG.md#v436">4.3.6</a></li>
+</ul>
+<h2 id="wazuh-docker-v435">Wazuh Docker v4.3.5</h2>
+<h3 id="added_4">Added</h3>
+<ul>
+<li>Update Wazuh to version <a href="https://github.com/wazuh/wazuh/blob/v4.3.5/CHANGELOG.md#v435">4.3.5</a></li>
+</ul>
+<h2 id="wazuh-docker-v434">Wazuh Docker v4.3.4</h2>
+<h3 id="added_5">Added</h3>
+<ul>
+<li>Update Wazuh to version <a href="https://github.com/wazuh/wazuh/blob/v4.3.4/CHANGELOG.md#v434">4.3.4</a></li>
+</ul>
+<h2 id="wazuh-docker-v433">Wazuh Docker v4.3.3</h2>
+<h3 id="added_6">Added</h3>
+<ul>
+<li>Update Wazuh to version <a href="https://github.com/wazuh/wazuh/blob/v4.3.3/CHANGELOG.md#v433">4.3.3</a></li>
+</ul>
+<h2 id="wazuh-docker-v432">Wazuh Docker v4.3.2</h2>
+<h3 id="added_7">Added</h3>
+<ul>
+<li>Update Wazuh to version <a href="https://github.com/wazuh/wazuh/blob/v4.3.2/CHANGELOG.md#v432">4.3.2</a></li>
+</ul>
+<h2 id="wazuh-docker-v431">Wazuh Docker v4.3.1</h2>
+<h3 id="added_8">Added</h3>
+<ul>
+<li>Update Wazuh to version <a href="https://github.com/wazuh/wazuh/blob/v4.3.1/CHANGELOG.md#v431">4.3.1</a></li>
+</ul>
+<h2 id="wazuh-docker-v430">Wazuh Docker v4.3.0</h2>
+<h3 id="added_9">Added</h3>
+<ul>
+<li>Update Wazuh to version <a href="https://github.com/wazuh/wazuh/blob/v4.3.0/CHANGELOG.md#v430">4.3.0</a></li>
+</ul>
+<h2 id="wazuh-docker-v427">Wazuh Docker v4.2.7</h2>
+<h3 id="added_10">Added</h3>
+<ul>
+<li>Update Wazuh to version <a href="https://github.com/wazuh/wazuh/blob/v4.2.7/CHANGELOG.md#v427">4.2.7</a></li>
+</ul>
+<h2 id="wazuh-docker-v426">Wazuh Docker v4.2.6</h2>
+<h3 id="added_11">Added</h3>
+<ul>
+<li>Update Wazuh to version <a href="https://github.com/wazuh/wazuh/blob/v4.2.6/CHANGELOG.md#v426">4.2.6</a></li>
+</ul>
+<h2 id="wazuh-docker-v425">Wazuh Docker v4.2.5</h2>
+<h3 id="added_12">Added</h3>
+<ul>
+<li>Update Wazuh to version <a href="https://github.com/wazuh/wazuh/blob/v4.2.5/CHANGELOG.md#v425">4.2.5</a></li>
+</ul>
+<h2 id="wazuh-docker-v424">Wazuh Docker v4.2.4</h2>
+<h3 id="added_13">Added</h3>
+<ul>
+<li>Update Wazuh to version <a href="https://github.com/wazuh/wazuh/blob/v4.2.4/CHANGELOG.md#v424">4.2.4</a></li>
+</ul>
+<h2 id="wazuh-docker-v423">Wazuh Docker v4.2.3</h2>
+<h3 id="added_14">Added</h3>
+<ul>
+<li>Update Wazuh to version <a href="https://github.com/wazuh/wazuh/blob/v4.2.3/CHANGELOG.md#v423">4.2.3</a></li>
+</ul>
+<h2 id="wazuh-docker-v422">Wazuh Docker v4.2.2</h2>
+<h3 id="added_15">Added</h3>
+<ul>
+<li>Update Wazuh to version <a href="https://github.com/wazuh/wazuh/blob/v4.2.2/CHANGELOG.md#v422">4.2.2</a></li>
+</ul>
+<h2 id="wazuh-docker-v421">Wazuh Docker v4.2.1</h2>
+<h3 id="added_16">Added</h3>
+<ul>
+<li>Update Wazuh to version <a href="https://github.com/wazuh/wazuh/blob/v4.2.1/CHANGELOG.md#v421">4.2.1</a></li>
+</ul>
+<h2 id="wazuh-docker-v420">Wazuh Docker v4.2.0</h2>
+<h3 id="added_17">Added</h3>
+<ul>
+<li>Update Wazuh to version <a href="https://github.com/wazuh/wazuh/blob/v4.2.0/CHANGELOG.md#v420">4.2.0</a></li>
+</ul>
+<h2 id="wazuh-docker-v415">Wazuh Docker v4.1.5</h2>
+<h3 id="added_18">Added</h3>
+<ul>
+<li>Update Wazuh to version <a href="https://github.com/wazuh/wazuh/blob/v4.1.5/CHANGELOG.md#v415">4.1.5</a></li>
+<li>Update ODFE compatibility to version 1.13.2</li>
+</ul>
+<h2 id="wazuh-docker-v414">Wazuh Docker v4.1.4</h2>
+<h3 id="added_19">Added</h3>
+<ul>
+<li>Update Wazuh to version <a href="https://github.com/wazuh/wazuh/blob/v4.1.4/CHANGELOG.md#v414">4.1.4</a></li>
+</ul>
+<h2 id="wazuh-docker-v413">Wazuh Docker v4.1.3</h2>
+<h3 id="added_20">Added</h3>
+<ul>
+<li>Update Wazuh to version <a href="https://github.com/wazuh/wazuh/blob/v4.1.3/CHANGELOG.md#v413">4.1.3</a></li>
+</ul>
+<h2 id="wazuh-docker-v412">Wazuh Docker v4.1.2</h2>
+<h3 id="added_21">Added</h3>
+<ul>
+<li>Update Wazuh to version <a href="https://github.com/wazuh/wazuh/blob/v4.1.2/CHANGELOG.md#v412">4.1.2</a></li>
+</ul>
+<h2 id="wazuh-docker-v411">Wazuh Docker v4.1.1</h2>
+<h3 id="added_22">Added</h3>
+<ul>
+<li>Update Wazuh to version <a href="https://github.com/wazuh/wazuh/blob/v4.1.1/CHANGELOG.md#v411">4.1.1</a></li>
+</ul>
+<h2 id="wazuh-docker-v410">Wazuh Docker v4.1.0</h2>
+<h3 id="added_23">Added</h3>
+<ul>
+<li>Update Wazuh to version <a href="https://github.com/wazuh/wazuh/blob/v4.1.0/CHANGELOG.md#v410">4.1.0</a></li>
+<li>Update ODFE compatibility to version 1.12.0</li>
+<li>Add support for Elasticsearch (xpack) images once again (7.10.2)  (<a href="https://github.com/xr09">@xr09</a>) <a href="https://github.com/wazuh/wazuh-docker/pull/409">#409</a></li>
+<li>Re-enable entrypoint scripts  (<a href="https://github.com/xr09">@xr09</a>) <a href="https://github.com/wazuh/wazuh-docker/pull/435">#435</a></li>
+<li>Add Goss binary for healthchecks (<a href="https://github.com/xr09">@xr09</a>) <a href="https://github.com/wazuh/wazuh-docker/pull/441">$441</a></li>
+<li>Update s6-overlay to latest version</li>
+</ul>
+<h2 id="wazuh-docker-v404_1110">Wazuh Docker v4.0.4_1.11.0</h2>
+<h3 id="added_24">Added</h3>
+<ul>
+<li>Update to Wazuh version <a href="https://github.com/wazuh/wazuh/blob/v4.0.4/CHANGELOG.md#v404">4.0.4</a></li>
+</ul>
+<h2 id="wazuh-docker-v403_1110">Wazuh Docker v4.0.3_1.11.0</h2>
+<h3 id="added_25">Added</h3>
+<ul>
+<li>Update to Wazuh version 4.0.3</li>
+</ul>
+<h2 id="wazuh-docker-v402_1110">Wazuh Docker v4.0.2_1.11.0</h2>
+<h3 id="added_26">Added</h3>
+<ul>
+<li>Update to Wazuh version 4.0.2</li>
+</ul>
+<h2 id="wazuh-docker-v401_1110">Wazuh Docker v4.0.1_1.11.0</h2>
+<h3 id="added_27">Added</h3>
+<ul>
+<li>Update to Wazuh version 4.0.1</li>
+<li>Opendistro 1.11.0 compatiblity</li>
+<li>Re-enabled dumping ossec.log to stdout</li>
+</ul>
+<h2 id="wazuh-docker-v400_1101">Wazuh Docker v4.0.0_1.10.1</h2>
+<h3 id="added_28">Added</h3>
+<ul>
+<li>Update to Wazuh version 4.0.0</li>
+<li>Updating Wazuh cluster key dynamically (<a href="https://github.com/1stOfHisGame">@1stOfHisGame</a>)  <a href="https://github.com/wazuh/wazuh-docker/pull/393">#393</a></li>
+<li>Switched to CentOS 7 for base image (<a href="https://github.com/xr09">@xr09</a>) <a href="https://github.com/wazuh/wazuh-docker/issues/259">#259</a></li>
+<li>Using s6-overlay for process management (<a href="https://github.com/xr09">@xr09</a>) <a href="https://github.com/wazuh/wazuh-docker/issues/274">#274</a></li>
+<li>Allow the creation of custom API users (<a href="https://github.com/xr09">@xr09</a>) <a href="https://github.com/wazuh/wazuh-docker/issues/395">#395</a></li>
+<li>OpenDistro support (<a href="https://github.com/xr09">@xr09</a>) <a href="https://github.com/wazuh/wazuh-docker/pull/373">#373</a></li>
+</ul>
+<h3 id="changed">Changed</h3>
+<ul>
+<li>Removal of Elastic images</li>
+</ul>
+<h2 id="wazuh-docker-v3132_791">Wazuh Docker v3.13.2_7.9.1</h2>
+<h3 id="added_29">Added</h3>
+<ul>
+<li>Update to Wazuh version 3.13.2_7.9.1</li>
+<li>Add CLUSTER_NETWORK_HOST environment variable (<a href="https://github.com/jfut">@jfut</a>) <a href="https://github.com/wazuh/wazuh-docker/pull/372">#372</a></li>
+</ul>
+<h3 id="fixed">Fixed</h3>
+<ul>
+<li>Too many redirects when running on port 80 (<a href="https://github.com/chowmean">@chowmean</a>) <a href="https://github.com/wazuh/wazuh-docker/pull/377">#377</a></li>
+<li>Move Filebeat installation to build stage (<a href="https://github.com/xr09">@xr09</a>) <a href="https://github.com/wazuh/wazuh-docker/pull/378">#378</a></li>
+</ul>
+<h2 id="wazuh-docker-v3131_780">Wazuh Docker v3.13.1_7.8.0</h2>
+<h3 id="added_30">Added</h3>
+<ul>
+<li>Update to Wazuh version 3.13.1_7.8.0</li>
+</ul>
+<h2 id="wazuh-docker-v3130_771">Wazuh Docker v3.13.0_7.7.1</h2>
+<h3 id="added_31">Added</h3>
+<ul>
+<li>Update to Wazuh version 3.13.3_7.7.1</li>
+</ul>
+<h3 id="fixed_1">Fixed</h3>
+<ul>
+<li>Save agentless state (<a href="https://github.com/xr09">@xr09</a>) <a href="https://github.com/wazuh/wazuh-docker/pull/350">#350</a></li>
+<li>Use HTTP credentials for service check when required (<a href="https://github.com/xr09">@xr09</a>) <a href="https://github.com/wazuh/wazuh-docker/pull/356">#356</a></li>
+</ul>
+<h2 id="wazuh-docker-v3123_762">Wazuh Docker v3.12.3_7.6.2</h2>
+<h3 id="added_32">Added</h3>
+<ul>
+<li>Update to Wazuh version 3.12.3_7.6.2</li>
+</ul>
+<h2 id="wazuh-docker-v3122_762">Wazuh Docker v3.12.2_7.6.2</h2>
+<h3 id="added_33">Added</h3>
+<ul>
+<li>Update to Wazuh version 3.12.2_7.6.2</li>
+</ul>
+<h2 id="wazuh-docker-v3121_762">Wazuh Docker v3.12.1_7.6.2</h2>
+<h3 id="added_34">Added</h3>
+<ul>
+<li>Update to Wazuh version 3.12.1_7.6.2</li>
+</ul>
+<h3 id="fixed_2">Fixed</h3>
+<ul>
+<li>Agent timestamp not being properly saved (<a href="https://github.com/xr09">@xr09</a>) <a href="https://github.com/wazuh/wazuh-docker/pull/323">#323</a></li>
+</ul>
+<h2 id="wazuh-docker-v3120_761">Wazuh Docker v3.12.0_7.6.1</h2>
+<h3 id="added_35">Added</h3>
+<ul>
+<li>Update to Wazuh version 3.12.0_7.6.1</li>
+</ul>
+<h2 id="wazuh-docker-v3114_761">Wazuh Docker v3.11.4_7.6.1</h2>
+<h3 id="added_36">Added</h3>
+<ul>
+<li>
+<p>Update to Wazuh version 3.11.4_7.6.1</p>
+</li>
+<li>
+<p>Enable HTTP v2 on nginx (<a href="https://github.com/xr09">@xr09</a>) <a href="https://github.com/wazuh/wazuh-docker/pull/308">#308</a></p>
+</li>
+</ul>
+<h3 id="fixed_3">Fixed</h3>
+<ul>
+<li>Updated NGINX config syntax (<a href="https://github.com/xr09">@xr09</a>) <a href="https://github.com/wazuh/wazuh-docker/pull/303">#303</a></li>
+</ul>
+<h2 id="wazuh-docker-v3113_752">Wazuh Docker v3.11.3_7.5.2</h2>
+<h3 id="added_37">Added</h3>
+<ul>
+<li>Update to Wazuh version 3.11.3_7.5.2</li>
+</ul>
+<h2 id="wazuh-docker-v3112_751">Wazuh Docker v3.11.2_7.5.1</h2>
+<h3 id="added_38">Added</h3>
+<ul>
+<li>Bumped Node.js to version 10 (<a href="https://github.com/xr09">@xr09</a>) <a href="https://github.com/wazuh/wazuh-docker/commit/8615cd4d2152601e55becc7c3675360938e74b6a">#8615cd4</a></li>
+</ul>
+<h3 id="fixed_4">Fixed</h3>
+<ul>
+<li>Fix S3 Plugin (<a href="https://github.com/AnthonySendra">@AnthonySendra</a>) <a href="https://github.com/wazuh/wazuh-docker/pull/293">#293</a></li>
+</ul>
+<h2 id="wazuh-docker-v3111_751">Wazuh Docker v3.11.1_7.5.1</h2>
+<h3 id="added_39">Added</h3>
+<ul>
+<li>Update to Wazuh version 3.11.1_7.5.1</li>
+<li>Filebeat configuration file updated to latest version (<a href="https://github.com/manuasir">@manuasir</a>) <a href="https://github.com/wazuh/wazuh-docker/pull/271">#271</a></li>
+<li>Allow using the hostname as node_name for managers (<a href="https://github.com/JPLachance">@JPLachance</a>) <a href="https://github.com/wazuh/wazuh-docker/pull/261">#261</a></li>
+</ul>
+<h2 id="wazuh-docker-v3110_751">Wazuh Docker v3.11.0_7.5.1</h2>
+<h3 id="added_40">Added</h3>
+<ul>
+<li>Update to Wazuh version 3.11.0_7.5.1</li>
+</ul>
+<h2 id="wazuh-docker-v3102_750">Wazuh Docker v3.10.2_7.5.0</h2>
+<h3 id="added_41">Added</h3>
+<ul>
+<li>Update to Wazuh version 3.10.2_7.5.0</li>
+</ul>
+<h2 id="wazuh-docker-v3102_732">Wazuh Docker v3.10.2_7.3.2</h2>
+<h3 id="added_42">Added</h3>
+<ul>
+<li>Update to Wazuh version 3.10.2_7.3.2</li>
+</ul>
+<h2 id="wazuh-docker-v3100_732">Wazuh Docker v3.10.0_7.3.2</h2>
+<h3 id="added_43">Added</h3>
+<ul>
+<li>Update to Wazuh version 3.10.0_7.3.2</li>
+</ul>
+<h2 id="wazuh-docker-v395_721">Wazuh Docker v3.9.5_7.2.1</h2>
+<h3 id="added_44">Added</h3>
+<ul>
+<li>Update to Wazuh version 3.9.5_7.2.1</li>
+</ul>
+<h2 id="wazuh-docker-v394_720">Wazuh Docker v3.9.4_7.2.0</h2>
+<h3 id="added_45">Added</h3>
+<ul>
+<li>Update to Wazuh version 3.9.4_7.2.0</li>
+<li>Implemented Wazuh Filebeat Module (<a href="https://www.github.com/jm404">jm404</a>) <a href="https://github.com/wazuh/wazuh-docker/commit/2a77c6a6e6bf78f2492adeedbade7a507d9974b2">#2a77c6a</a></li>
+</ul>
+<h2 id="wazuh-docker-v393_720">Wazuh Docker v3.9.3_7.2.0</h2>
+<h3 id="fixed_5">Fixed</h3>
+<ul>
+<li>Wazuh-docker reinserts cluster settings after resuming containers (<a href="https://github.com/manuasir">@manuasir</a>) <a href="https://github.com/wazuh/wazuh-docker/pull/213">#213</a></li>
+</ul>
+<h2 id="wazuh-docker-v392_711">Wazuh Docker v3.9.2_7.1.1</h2>
+<h3 id="added_46">Added</h3>
+<ul>
+<li>Update to Wazuh version 3.9.2_7.1.1</li>
+</ul>
+<h2 id="wazuh-docker-v392_680">Wazuh Docker v3.9.2_6.8.0</h2>
+<h3 id="added_47">Added</h3>
+<ul>
+<li>Update to Wazuh version 3.9.2_6.8.0</li>
+</ul>
+<h2 id="wazuh-docker-v391_710">Wazuh Docker v3.9.1_7.1.0</h2>
+<h3 id="added_48">Added</h3>
+<ul>
+<li>Support for Elastic v7.1.0</li>
+<li>New environment variables for Kibana (<a href="https://github.com/manuasir">@manuasir</a>) <a href="https://github.com/wazuh/wazuh-docker/commit/22ad4360f548e54bb0c5e929f8c84a186ad2ab88">#22ad43</a></li>
+</ul>
+<h2 id="wazuh-docker-v391_680">Wazuh Docker v3.9.1_6.8.0</h2>
+<h3 id="added_49">Added</h3>
+<ul>
+<li>Update to Wazuh version 3.9.1_6.8.0 (<a href="https://github.com/wazuh/wazuh-docker/pull/181">#181</a>)</li>
+</ul>
+<h3 id="fixed_6">Fixed</h3>
+<ul>
+<li>Fixed <code>ELASTICSEARCH_KIBANA_IP</code> environment variable (<a href="https://github.com/manuasir">@manuasir</a>) (<a href="https://github.com/wazuh/wazuh-docker/pull/181">#181</a>)</li>
+</ul>
+<h2 id="wazuh-docker-v390_672">Wazuh Docker v3.9.0_6.7.2</h2>
+<h3 id="changed_1">Changed</h3>
+<ul>
+<li>Update Elastic Stack version to 6.7.2.</li>
+</ul>
+<h2 id="wazuh-docker-v390_671">Wazuh Docker v3.9.0_6.7.1</h2>
+<h3 id="added_50">Added</h3>
+<ul>
+<li>Support for xPACK authorized requests (<a href="https://github.com/manuasir">@manuasir</a>) (<a href="https://github.com/wazuh/wazuh-docker/pull/119">#119</a>)</li>
+<li>Add Elasticsearch cluster configuration (<a href="https://github.com/SitoRBJ">@SitoRBJ</a>). (<a href="https://github.com/wazuh/wazuh-docker/pull/146">#146</a>)</li>
+<li>Add Elasticsearch cluster configuration (<a href="https://github.com/Phandora">@Phandora</a>) (<a href="https://github.com/wazuh/wazuh-docker/pull/140">#140</a>)</li>
+<li>Setting Nginx to support several user/passwords in Kibana (<a href="https://github.com/toniMR">@toniMR</a>) (<a href="https://github.com/wazuh/wazuh-docker/pull/136">#136</a>)</li>
+</ul>
+<h3 id="changed_2">Changed</h3>
+<ul>
+<li>Use LS_JAVA_OPTS instead of old LS_HEAP_SIZE (<a href="https://github.com/ruffy91">@ruffy91</a>) (<a href="https://github.com/wazuh/wazuh-docker/pull/139">#139</a>)</li>
+<li>Changing the original Wazuh docker image to allow adding code in the entrypoint (<a href="https://github.com/phandora">@Phandora</a>) (<a href="https://github.com/wazuh/wazuh-docker/pull/151">#151</a>)</li>
+</ul>
+<h3 id="removed">Removed</h3>
+<ul>
+<li>Removing files from Wazuh image (<a href="https://github.com/phandora">@Phandora</a>) (<a href="https://github.com/wazuh/wazuh-docker/pull/153">#153</a>)</li>
+</ul>
+<h2 id="wazuh-docker-v382_670">Wazuh Docker v3.8.2_6.7.0</h2>
+<h3 id="changed_3">Changed</h3>
+<ul>
+<li>Update Elastic Stack version to 6.7.0. (<a href="https://github.com/wazuh/wazuh-docker/pull/144">#144</a>)</li>
+</ul>
+<h2 id="wazuh-docker-v382_662">Wazuh Docker v3.8.2_6.6.2</h2>
+<h3 id="changed_4">Changed</h3>
+<ul>
+<li>Update Elastic Stack version to 6.6.2. (<a href="https://github.com/wazuh/wazuh-docker/pull/130">#130</a>)</li>
+</ul>
+<h2 id="wazuh-docker-v382_661">Wazuh Docker v3.8.2_6.6.1</h2>
+<h3 id="changed_5">Changed</h3>
+<ul>
+<li>Update Elastic Stack version to 6.6.1. (<a href="https://github.com/wazuh/wazuh-docker/pull/129">#129</a>)</li>
+</ul>
+<h2 id="wazuh-docker-v382_654">Wazuh Docker v3.8.2_6.5.4</h2>
+<h3 id="added_51">Added</h3>
+<ul>
+<li>Add Wazuh-Elasticsearch. (<a href="https://github.com/wazuh/wazuh-docker/pull/106">#106</a>)</li>
+<li>Store Filebeat <em>/var/lib/filebeat/registry.</em> (<a href="https://github.com/wazuh/wazuh-docker/pull/109">#109</a>)</li>
+<li>Adding the option to disable some xpack features. (<a href="https://github.com/wazuh/wazuh-docker/pull/111">#111</a>)</li>
+<li>Wazuh-Kibana customizable at plugin level. (<a href="https://github.com/wazuh/wazuh-docker/pull/117">#117</a>)</li>
+<li>Adding env variables for alerts data flow. (<a href="https://github.com/wazuh/wazuh-docker/pull/118">#118</a>)</li>
+<li>New Logstash entrypoint added. (<a href="https://github.com/wazuh/wazuh-docker/pull/135/files">#135</a>)</li>
+<li>Welcome screen management. (<a href="https://github.com/wazuh/wazuh-docker/pull/133">#133</a>)</li>
+</ul>
+<h3 id="changed_6">Changed</h3>
+<ul>
+<li>Update to Wazuh version 3.8.2. (<a href="https://github.com/wazuh/wazuh-docker/pull/105">#105</a>)</li>
+</ul>
+<h3 id="removed_1">Removed</h3>
+<ul>
+<li>Remove alerts created in build time. (<a href="https://github.com/wazuh/wazuh-docker/pull/137">#137</a>)</li>
+</ul>
+<h2 id="wazuh-docker-v381_654">Wazuh Docker v3.8.1_6.5.4</h2>
+<h3 id="changed_7">Changed</h3>
+<ul>
+<li>Update to Wazuh version 3.8.1. (<a href="https://github.com/wazuh/wazuh-docker/pull/102">#102</a>)</li>
+</ul>
+<h2 id="wazuh-docker-v380_654">Wazuh Docker v3.8.0_6.5.4</h2>
+<h3 id="changed_8">Changed</h3>
+<ul>
+<li>Upgrade version 3.8.0_6.5.4. (<a href="https://github.com/wazuh/wazuh-docker/pull/97">#97</a>)</li>
+</ul>
+<h3 id="removed_2">Removed</h3>
+<ul>
+<li>Remove cluster.py work around. (<a href="https://github.com/wazuh/wazuh-docker/pull/99">#99</a>)</li>
+</ul>
+<h2 id="wazuh-docker-v372_654">Wazuh Docker v3.7.2_6.5.4</h2>
+<h3 id="added_52">Added</h3>
+<ul>
+<li>Improvements to Kibana settings added. (<a href="https://github.com/wazuh/wazuh-docker/pull/91">#91</a>)</li>
+<li>Add Kibana environmental variables for Wazuh APP config.yml. (<a href="https://github.com/wazuh/wazuh-docker/pull/89">#89</a>)</li>
+</ul>
+<h3 id="changed_9">Changed</h3>
+<ul>
+<li>Update Elastic Stack version to 6.5.4. (<a href="https://github.com/wazuh/wazuh-docker/pull/82">#82</a>)</li>
+<li>Add env credentials for nginx. (<a href="https://github.com/wazuh/wazuh-docker/pull/86">#86</a>)</li>
+<li>Improve filebeat configuration (<a href="https://github.com/wazuh/wazuh-docker/pull/88">#88</a>)</li>
+</ul>
+<h3 id="fixed_7">Fixed</h3>
+<ul>
+<li>Temporary fix for Wazuh cluster master node in Kubernetes. (<a href="https://github.com/wazuh/wazuh-docker/pull/84">#84</a>)</li>
+</ul>
+<h2 id="wazuh-docker-v372_653">Wazuh Docker v3.7.2_6.5.3</h2>
+<h3 id="changed_10">Changed</h3>
+<ul>
+<li>Erasing temporary fix for AWS integration. (<a href="https://github.com/wazuh/wazuh-docker/pull/81">#81</a>)</li>
+</ul>
+<h3 id="fixed_8">Fixed</h3>
+<ul>
+<li>Upgrading errors due to wrong files. (<a href="https://github.com/wazuh/wazuh-docker/pull/80">#80</a>)</li>
+</ul>
+<h2 id="wazuh-docker-v370_650">Wazuh Docker v3.7.0_6.5.0</h2>
+<h3 id="changed_11">Changed</h3>
+<ul>
+<li>Adapt to Elastic stack 6.5.0.</li>
+</ul>
+<h2 id="wazuh-docker-v370_643">Wazuh Docker v3.7.0_6.4.3</h2>
+<h3 id="added_53">Added</h3>
+<ul>
+<li>Allow custom scripts or commands before service start (<a href="https://github.com/wazuh/wazuh-docker/pull/58">#58</a>)</li>
+<li>Added description for wazuh-nginx (<a href="https://github.com/wazuh/wazuh-docker/pull/59">#59</a>)</li>
+<li>Added license file to match https://github.com/wazuh/wazuh LICENSE (<a href="https://github.com/wazuh/wazuh-docker/pull/60">#60</a>)</li>
+<li>Added SMTP packages (<a href="https://github.com/wazuh/wazuh-docker/pull/67">#67</a>)</li>
+</ul>
+<h3 id="changed_12">Changed</h3>
+<ul>
+<li>Increased proxy buffer for NGINX Kibana (<a href="https://github.com/wazuh/wazuh-docker/pull/51">#51</a>)</li>
+<li>Updated logstash config to remove deprecation warnings (<a href="https://github.com/wazuh/wazuh-docker/pull/55">#55</a>)</li>
+<li>Set ossec user's home path (<a href="https://github.com/wazuh/wazuh-docker/pull/61">#61</a>)</li>
+</ul>
+<h3 id="fixed_9">Fixed</h3>
+<ul>
+<li>Fixed a bug that prevents the API from starting when the Wazuh manager was updated. Change in the files that are stored in the volume.  (<a href="https://github.com/wazuh/wazuh-docker/pull/65">#65</a>)</li>
+<li>Fixed script reference (<a href="https://github.com/wazuh/wazuh-docker/pull/62/files">#62</a>)</li>
+</ul>
+<h2 id="wazuh-docker-v361_643">Wazuh Docker v3.6.1_6.4.3</h2>
+<p>Wazuh-Docker starting point.</p>
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+    <nav class="md-footer__inner md-grid" aria-label="Footer" >
+      
+        
+        <a href="../" class="md-footer__link md-footer__link--prev" aria-label="Previous: Wazuh containers for Docker" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              Wazuh containers for Docker
+            </div>
+          </div>
+        </a>
+      
+      
+        
+        <a href="../build-docker-images/" class="md-footer__link md-footer__link--next" aria-label="Next: Wazuh Docker Image Builder" rel="next">
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              Wazuh Docker Image Builder
+            </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
+          </div>
+        </a>
+      
+    </nav>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    <script id="__config" type="application/json">{"base": "../../..", "features": [], "search": "../../../assets/javascripts/workers/search.16e2a7d4.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.d6c3db9e.min.js"></script>
+      
+    
+  </body>
+</html>
